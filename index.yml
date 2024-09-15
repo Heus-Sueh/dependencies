@@ -203,7 +203,9 @@ powershell:
 powershell_core:
   Description: Microsoft PowerShell Core
   Category: Essentials
-
+cinepak:
+  Description: Cinepak Codec for Windows
+  Category: Essentials
 # DIRECT3D
 # ------------------------------
 d3dx9:

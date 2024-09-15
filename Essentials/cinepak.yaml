@@ -5,17 +5,17 @@ License:
 License_url:
 Dependencies: []
 Steps:
-  - action: archive_extract
-    filename: cvid32.zip
-    url: http://www.probo.com/pub/cinepak/cvid32.zip
-    file_checksum: c584ef9f338aab02bce848473aa4103b
-    dest: temp/cinepak/
+- action: archive_extract
+  file_name: cvid32.zip
+  url: http://www.probo.com/pub/cinepak/cvid32.zip
+  file_checksum: b6d38d34f2e996ac1f0b2f18538f65be
+  dest: temp/cvid32/
 
-  - action: copy_dll
-    url: temp/cinepak/
-    file: ICCVID.DLL
-    dest: win32/iccvid.dll
+- action: copy_dll
+  url: temp/cvid32/
+  file_name: ICCVID.DLL
+  dest: win32
 
-  - action: override_dll
-    dll: iccvid
-    type: native
+- action: override_dll
+  dll: ICCVID
+  type: native

@@ -41,3 +41,7 @@ allfonts:
 cjkfonts:
   Description: All Chinese/Japanese/Korean fonts
   Category: Fonts
+
+cinepak:
+  Description: Cinepak Codec for Windows
+  Category: Essentials
