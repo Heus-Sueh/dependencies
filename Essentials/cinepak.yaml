@@ -1,0 +1,21 @@
+Name: cinepak
+Description: Cinepak Codec for Windows
+Provider: Probo
+License:
+License_url:
+Dependencies: []
+Steps:
+  - action: archive_extract
+    filename: cvid32.zip
+    url: http://www.probo.com/pub/cinepak/cvid32.zip
+    file_checksum: c584ef9f338aab02bce848473aa4103b
+    dest: temp/cinepak/
+
+  - action: copy_dll
+    url: temp/cinepak/
+    file: ICCVID.DLL
+    dest: win32/iccvid.dll
+
+  - action: override_dll
+    dll: iccvid
+    type: native
